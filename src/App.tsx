@@ -1,12 +1,10 @@
 import './App.css';
-import { Footer } from './dist/components/Footer';
-import { Header } from './dist/components/Header';
+
 
 
 function App() {
   return (
     <>
-      <Header />
       <section className="hero">
         <div className="contenido-hero">
           <h2>Diseño y Desarrollo Web <span>Freelancer</span></h2>
@@ -21,7 +19,7 @@ function App() {
             </svg>
             <p> Ciudad de Mèxico</p>
           </div>
-          <a className="boton">Contactar</a>
+          <a href="#contacto_hero" className="boton">Contactar</a>
         </div>
         {/* <!-- / .contenido-hero --> */}
       </section>
@@ -107,7 +105,7 @@ function App() {
 
                 <div className="campo">
                   <label >Teléfono</label>
-                  <input className="input-text" type="number" placeholder="Tu teléfono"></input>
+                  <input className="input-text" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Tu teléfono" required></input>
                 </div>
 
                 <div className="campo">
@@ -126,11 +124,8 @@ function App() {
               </div>
             </fieldset>
           </form>
-
-
         </section>
       </main>
-      <Footer />
     </>
   )
 }

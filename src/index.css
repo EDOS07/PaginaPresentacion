@@ -93,3 +93,10 @@ h2,
 h3 {
     text-align: center;
 }
+
+/* .servicios,
+.navegacion-principal,
+.formulario {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+} */
