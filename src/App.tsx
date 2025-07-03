@@ -1,10 +1,12 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import { Header } from './dist/components/Header';
-import { Footer } from './dist/components/Footer';
-import { SobreMi } from './dist/assets/sobreMi/SobreMi';
-import { Portafolio } from './dist/assets/portafolio/Portafolio';
-import { Home } from './dist/assets/home/Home';
+import { Header } from './components/Header';
+import { Footer } from './components/Footer';
+import { SobreMi } from './assets/sobreMi/SobreMi';
+import { Portafolio } from './assets/portafolio/Portafolio';
+import { Home } from './assets/home/Home';
+Home
+
 
 function App() {
   return (
@@ -12,9 +14,13 @@ function App() {
       <Header />
 
       <Routes>
-        <Route path='Home' element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="SobreMi" element={<SobreMi />} />
         <Route path="Portafolio" element={<Portafolio />} />
+
+        <Route path="/*" element={<Home />} />
+
+
       </Routes>
 
       <Footer />
