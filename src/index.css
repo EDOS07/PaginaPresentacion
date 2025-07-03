@@ -100,3 +100,11 @@ h3 {
     scroll-snap-align: center;
     scroll-snap-stop: always;
 } */
+
+@media (min-width: 768px) {
+    /* Global */
+
+    .boton {
+        width: auto;
+    }
+}

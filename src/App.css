@@ -65,7 +65,7 @@
 
 }
 
-.eslogan-hero{
+.eslogan-hero {
     font-style: italic;
 }
 
@@ -166,11 +166,6 @@
 }
 
 @media (min-width: 768px) {
-    /* Global */
-
-    .boton {
-        width: auto;
-    }
 
     /* Utilidades */
 

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 
 
 
@@ -6,12 +7,13 @@ export const Header = () => {
     <header>
       <h1 className="titulo">Eduardo Orozco <span>Freelancer</span></h1>
       <div className="nav-bg">
-        <nav className="navegacion-principal contenedor ">
-          {/* <!-- <a href="#">Inicio</a> --> */}
-          <a href="">Sobre Mi</a>
-          <a href="portafolio.html">Portafolio</a>
-          <a href="#contacto_hero">Contacto</a>
+        <nav className="navegacion-principal contenedor">
+          <Link to="/Home">Inicio</Link>
+          <Link to="/SobreMi">Sobre Mi</Link>
+          <Link to="/Portafolio">Portafolio</Link>
+          <a href="#contacto_hero">Contacto</a>          
         </nav>
+
       </div>
     </header>
   )
